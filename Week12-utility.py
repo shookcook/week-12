@@ -5,18 +5,25 @@
 
 def PrintOutput(statement):
     d = statement
-    print(d)
+    print('OUTPUT', d)
 
 
 def LoadFile(file):
     a = open(file, 'r')
     b = a.read()
     c = b.split('\n')
-    print(c) 
+    PrintOutput(c) 
 
 
 def UpdateString(word, letter, num):
     a = list(word)
     a[num] = letter
     new_word = ''.join(a)
-    print(new_word)
+    PrintOutput(new_word)
+
+
+def FindWordCount(mylist, mystring):
+    a = 0
+    for i in mylist:
+        a += i.count(mystring)
+    PrintOutput(a)
