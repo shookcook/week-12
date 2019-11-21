@@ -28,6 +28,7 @@ def FindWordCount(mylist, mystring):
         a += i.count(mystring)
     PrintOutput(a)
 
+
 def ScoreFinder(list1, list2, string):
     a = 0
     for i in list1:
@@ -36,3 +37,8 @@ def ScoreFinder(list1, list2, string):
             a += 1
     if a == 0:
         PrintOutput('player not found')
+
+
+def Union(list1, list2):
+    newlist = list1 + list2
+    PrintOutput(newlist)
