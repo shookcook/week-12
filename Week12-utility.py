@@ -49,11 +49,19 @@ def Intersection(list1, list2):
     for i in list1:
         for a in list2:
             if i.lower() == a.lower():
-                newlist.append(i)
+                if i not in newlist:
+                    newlist.append(i)
     PrintOutput(newlist)
 
 
-
+def NotIn(list1, list2):
+    newlist= []
+    for i in list1:
+        for a in list2:
+            if i.lower() != a.lower():
+                if i not in newlist:
+                    newlist.append(i)
+    PrintOutput(newlist)
 
 
 
