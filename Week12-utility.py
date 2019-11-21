@@ -42,3 +42,28 @@ def ScoreFinder(list1, list2, string):
 def Union(list1, list2):
     newlist = list1 + list2
     PrintOutput(newlist)
+
+
+def Intersection(list1, list2):
+    newlist= []
+    for i in list1:
+        for a in list2:
+            if i.lower() == a.lower():
+                newlist.append(i)
+    PrintOutput(newlist)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
