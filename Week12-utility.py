@@ -7,3 +7,7 @@ def PrintOutput(statement):
     d = statement
     print(d)
 
+def LoadFile(file):
+    a = open(file, 'r')
+    b = a.read()
+    print(b) 
