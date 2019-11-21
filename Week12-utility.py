@@ -7,7 +7,16 @@ def PrintOutput(statement):
     d = statement
     print(d)
 
+
 def LoadFile(file):
     a = open(file, 'r')
     b = a.read()
-    print(b) 
+    c = b.split('\n')
+    print(c) 
+
+
+def UpdateString(word, letter, num):
+    a = list(word)
+    a[num] = letter
+    new_word = ''.join(a)
+    print(new_word)
